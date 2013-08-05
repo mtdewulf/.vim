@@ -48,4 +48,5 @@ filetype on
 filetype plugin indent on
 set background=dark
 
-colorscheme elflord
+let g:solarized_termcolors=256
+colorscheme solarized
