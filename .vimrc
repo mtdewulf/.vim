@@ -1,0 +1,12 @@
+set laststatus=2
+set ignorecase
+set smartcase
+set incsearch
+set nowrap
+set number
+set hlsearch
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set colorcolumn=80
+colorscheme elflord
