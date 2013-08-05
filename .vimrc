@@ -25,6 +25,15 @@ au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set completeopt=menuone,longest,preview
 
+" ctags
+set tags=tags;
+
+" nerd tree
+map <leader>n :NERDTreeToggle<CR>
+
+" Ack integration
+nmap <leader>a <Esc>:Ack!
+
 " Misc. customizations
 set laststatus=2
 set ignorecase
