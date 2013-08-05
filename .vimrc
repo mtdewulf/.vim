@@ -4,13 +4,6 @@ call pathogen#incubate()
 call pathogen#helptags()
 execute pathogen#infect()
 
-set foldmethod=indent
-set foldlevel=99
-
-syntax on
-filetype on
-filetype plugin indent on
-
 " Gundo (show all versions)
 map <leader>g :GundoToggle<CR>
 
@@ -46,5 +39,13 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set colorcolumn=80
+
+set foldmethod=indent
+set foldlevel=99
+
+syntax on
+filetype on
+filetype plugin indent on
+set background=dark
 
 colorscheme elflord
