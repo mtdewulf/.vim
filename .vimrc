@@ -24,7 +24,7 @@ set completeopt=menuone,longest,preview
 set tags=tags;
 
 " nerd tree
-map <leader>n :NERDTreeToggle<CR>
+map <leader>n :NERDTreeFind<CR>
 
 " Ack integration
 nmap <leader>a <Esc>:Ack!
