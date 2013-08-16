@@ -14,7 +14,7 @@ let g:pyflakes_use_quickfix = 0
 set tags=tags;
 
 " nerd tree
-map <leader>n :NERDTreeFind<CR>
+map <leader>f :NERDTreeFind<CR>
 
 " Ack integration
 nmap <leader>a <Esc>:Ack!
