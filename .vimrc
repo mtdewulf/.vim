@@ -37,7 +37,8 @@ set foldlevel=99
 syntax on
 filetype on
 filetype plugin indent on
-set background=dark
 
 let g:solarized_termcolors=256
+let g:solarized_termtrans=1
+set background=dark
 colorscheme solarized
