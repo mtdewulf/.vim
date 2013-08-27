@@ -19,6 +19,9 @@ map <leader>f :NERDTreeFind<CR>
 " Ack integration
 nmap <leader>a <Esc>:Ack!
 
+" Jedi VIM
+let g:jedi#show_function_definition = 0
+
 " Misc. customizations
 set laststatus=2
 set smartcase
