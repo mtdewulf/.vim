@@ -13,8 +13,9 @@ let g:pep8_map='<leader>8'
 " pyflakes
 let g:pyflakes_use_quickfix = 0
 
-" ctags
+" ctags & tagbar
 set tags=tags;
+nmap <leader>] :TagbarToggle<CR>
 
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
@@ -22,9 +23,6 @@ let g:NERDTreeQuitOnOpen = 1
 
 " ack integration
 nmap <leader>a <Esc>:Ack!
-
-" jedi VIM
-let g:jedi#show_function_definition = 0
 
 " auto reload files when changed on disk
 set autoread
