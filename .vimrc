@@ -1,13 +1,16 @@
-" Set up pathogen
+" set up pathogen
 filetype off
 call pathogen#incubate()
 call pathogen#helptags()
 execute pathogen#infect()
 
-" PEP8
+" don't bother with vi compatibility
+set nocompatible
+
+" pep8
 let g:pep8_map='<leader>8'
 
-" Pyflakes
+" pyflakes
 let g:pyflakes_use_quickfix = 0
 
 " ctags
@@ -17,25 +20,45 @@ set tags=tags;
 map <leader>f :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen = 1
 
-" Ack integration
+" ack integration
 nmap <leader>a <Esc>:Ack!
 
-" Jedi VIM
+" jedi VIM
 let g:jedi#show_function_definition = 0
 
-" Misc. customizations
+" auto reload files when changed on disk
+set autoread
+
+" basic view
 set laststatus=2
+set number  " show line numbers
+
+" searching
 set smartcase
 set incsearch
-set nowrap
-set number
 set hlsearch
+
+" indenting
 set expandtab
 set tabstop=4
 set shiftwidth=4
+
+" folding
 set foldmethod=indent
 set foldlevel=99
+
+" wrapping
+set nowrap
 set showbreak=>>>
+
+" easier to navigate vim menu
+set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
+set wildmenu
+set wildmode=longest,list,full
+
+" show trailing whitespace
+set list
+set listchars=tab:▸\ ,trail:▫
 
 " colors & syntax
 execute "set colorcolumn=" . join(range(81,335), ',')
@@ -49,10 +72,13 @@ let g:solarized_termtrans=1
 set background=dark
 colorscheme solarized
 
-" Fix home/end key in all modes
+" fix home/end key in all modes
 map <esc>OH <home>
 cmap <esc>OH <home>
 imap <esc>OH <home>
 map <esc>OF <end>
 cmap <esc>OF <end>
 imap <esc>OF <end>
+
+" enable basic mouse behavior
+set mouse=a
