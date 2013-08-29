@@ -33,10 +33,12 @@ set hlsearch
 set expandtab
 set tabstop=4
 set shiftwidth=4
-set colorcolumn=80
-
 set foldmethod=indent
 set foldlevel=99
+set showbreak=>>>
+
+" colors & syntax
+execute "set colorcolumn=" . join(range(81,335), ',')
 
 syntax on
 filetype on
