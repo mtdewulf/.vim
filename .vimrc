@@ -77,6 +77,3 @@ imap <esc>OH <home>
 map <esc>OF <end>
 cmap <esc>OF <end>
 imap <esc>OF <end>
-
-" enable basic mouse behavior
-set mouse=a
