@@ -15,6 +15,7 @@ set tags=tags;
 
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
+let g:NERDTreeQuitOnOpen = 1
 
 " Ack integration
 nmap <leader>a <Esc>:Ack!
