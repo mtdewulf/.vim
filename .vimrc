@@ -55,6 +55,9 @@ set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
 
+" shortcut for buffer list
+nmap <leader>b :buffers<CR>
+
 " show trailing whitespace
 set list
 set listchars=tab:▸\ ,trail:▫
