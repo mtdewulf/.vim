@@ -16,6 +16,7 @@ let g:pyflakes_use_quickfix = 0
 " ctags & tagbar
 set tags=tags;
 nmap <leader>] :TagbarToggle<CR>
+let g:tagbar_sort = 0
 
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
