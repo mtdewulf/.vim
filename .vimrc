@@ -69,6 +69,7 @@ syntax on
 filetype on
 filetype plugin indent on
 
+let &t_Co=256
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
 set background=dark
