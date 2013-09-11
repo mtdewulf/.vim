@@ -21,6 +21,7 @@ let g:tagbar_sort = 0
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeIgnore = ['\.pyc$']
 
 " ack integration
 nmap <leader>a <Esc>:Ack!
