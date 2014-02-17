@@ -26,6 +26,9 @@ map <leader>f :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeIgnore = ['\.pyc$']
 
+" jedi vim
+let g:jedi#completions_command = "<C-Space>"
+
 " ack integration
 nmap <leader>a <Esc>:Ack!
 
