@@ -7,6 +7,9 @@ execute pathogen#infect()
 " don't bother with vi compatibility
 set nocompatible
 
+" ctrl-p
+let g:ctrlp_custom_ignore = '\v\.(pyc)$'
+
 " pep8
 let g:pep8_map='<leader>8'
 
@@ -21,6 +24,10 @@ let g:tagbar_sort = 0
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen = 1
+let g:NERDTreeIgnore = ['\.pyc$']
+
+" jedi vim
+let g:jedi#completions_command = "<C-Space>"
 
 " ack integration
 nmap <leader>a <Esc>:Ack!
