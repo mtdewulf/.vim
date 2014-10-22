@@ -69,8 +69,14 @@ nmap <leader>b :buffers<CR>
 set list
 set listchars=tab:▸\ ,trail:▫
 
+" delete like normal
+set backspace=indent,eol,start
+
 " colors & syntax
 execute "set colorcolumn=" . join(range(81,335), ',')
+
+" mouse
+set mouse=a
 
 syntax on
 filetype on
