@@ -16,10 +16,9 @@ let g:pep8_map='<leader>8'
 " pyflakes
 let g:pyflakes_use_quickfix = 0
 
-" ctags & tagbar
-set tags=tags;
-nmap <leader>] :TagbarToggle<CR>
-let g:tagbar_sort = 0
+" fugitive
+nmap <leader>b <Esc>:Gblame<CR>
+nmap <leader>w <Esc>:Gbrowse<CR>
 
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
@@ -28,6 +27,7 @@ let g:NERDTreeIgnore = ['\.pyc$']
 
 " jedi vim
 let g:jedi#completions_command = "<C-Space>"
+let g:jedi#use_tabs_not_buffers = 0
 
 " ack integration
 nmap <leader>a <Esc>:Ack!
@@ -57,13 +57,10 @@ set foldlevel=99
 set nowrap
 set showbreak=>>>
 
-" easier to navigate vim menu
+" easier to navigate vim men
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
-
-" shortcut for buffer list
-nmap <leader>b :buffers<CR>
 
 " show trailing whitespace
 set list
