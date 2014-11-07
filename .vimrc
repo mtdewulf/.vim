@@ -15,6 +15,8 @@ let g:pymode_rope_goto_definition_bind = "<C-]>"
 let g:pymode_breakpoint = 0
 let g:pymode_motion = 0
 let g:pymode_run = 0
+let g:pymode_lint_cwindow = 0
+let g:pymode_rope_goto_definition_cmd = 'e'
 
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
