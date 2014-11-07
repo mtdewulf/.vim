@@ -10,6 +10,12 @@ set nocompatible
 " ctrl-p
 let g:ctrlp_custom_ignore = '\v\.(pyc)$'
 
+" python-mode
+let g:pymode_rope_goto_definition_bind = "<C-]>"
+let g:pymode_breakpoint = 0
+let g:pymode_motion = 0
+let g:pymode_run = 0
+
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
 nmap <leader>w <Esc>:Gbrowse<CR>
@@ -18,10 +24,6 @@ nmap <leader>w <Esc>:Gbrowse<CR>
 map <leader>f :NERDTreeFind<CR>
 let g:NERDTreeQuitOnOpen = 1
 let g:NERDTreeIgnore = ['\.pyc$']
-
-" jedi vim
-let g:jedi#completions_command = "<C-Space>"
-let g:jedi#use_tabs_not_buffers = 0
 
 " ack integration
 nmap <leader>a <Esc>:Ack!
