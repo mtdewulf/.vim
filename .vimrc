@@ -10,12 +10,6 @@ set nocompatible
 " ctrl-p
 let g:ctrlp_custom_ignore = '\v\.(pyc)$'
 
-" pep8
-let g:pep8_map='<leader>8'
-
-" pyflakes
-let g:pyflakes_use_quickfix = 0
-
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
 nmap <leader>w <Esc>:Gbrowse<CR>

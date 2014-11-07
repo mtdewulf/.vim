@@ -55,3 +55,9 @@
 [submodule "bundle/vim-virtualenv"]
 	path = bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv.git
+[submodule "bundle/vim-minimap"]
+	path = bundle/vim-minimap
+	url = https://github.com/severin-lemaignan/vim-minimap.git
+[submodule "bundle/python-mode"]
+	path = bundle/python-mode
+	url = git://github.com/klen/python-mode.git
