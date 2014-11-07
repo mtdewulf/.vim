@@ -70,6 +70,10 @@ set backspace=indent,eol,start
 " colors & syntax
 execute "set colorcolumn=" . join(range(81,335), ',')
 
+" close help automatically
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 " mouse
 set mouse=a
 
