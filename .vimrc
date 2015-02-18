@@ -11,12 +11,14 @@ set nocompatible
 let g:ctrlp_custom_ignore = '\v\.(pyc)$'
 
 " python-mode
+let g:pymode_rope_lookup_project = 0
+let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_goto_definition_bind = "<C-]>"
+let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_breakpoint = 0
 let g:pymode_motion = 0
 let g:pymode_run = 0
 let g:pymode_lint_cwindow = 0
-let g:pymode_rope_goto_definition_cmd = 'e'
 
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
