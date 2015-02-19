@@ -16,6 +16,7 @@ let g:pymode_rope_complete_on_dot = 0
 let g:pymode_rope_goto_definition_bind = "<C-]>"
 let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_breakpoint = 0
+let g:pymode_folding = 0
 let g:pymode_motion = 0
 let g:pymode_run = 0
 let g:pymode_lint_cwindow = 0
