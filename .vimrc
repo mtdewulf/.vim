@@ -9,10 +9,12 @@ set nocompatible
 
 " ctrl-p
 let g:ctrlp_custom_ignore = '\v\.(pyc)$'
+let g:ctrlp_user_command = 'find %s -type f -not -path "*/.git/*" -not -path "*/node_modules/*" -not -path "*/onsite/static/*" -not -path "*.pyc"'
 
 " python-mode
 let g:pymode_rope_lookup_project = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_autoimport = 0
 let g:pymode_rope_goto_definition_bind = "<C-]>"
 let g:pymode_rope_goto_definition_cmd = 'e'
 let g:pymode_breakpoint = 0
