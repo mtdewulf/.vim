@@ -11,21 +11,13 @@ set nocompatible
 let g:ctrlp_custom_ignore = '\v\.(pyc)$'
 let g:ctrlp_user_command = 'find %s -type f -not -path "*/.git/*" -not -path "*/node_modules/*" -not -path "*/onsite/static/*" -not -path "*.pyc"'
 
-" python-mode
-let g:pymode_rope_lookup_project = 0
-let g:pymode_rope_complete_on_dot = 0
-let g:pymode_rope_autoimport = 0
-let g:pymode_rope_goto_definition_bind = "<C-]>"
-let g:pymode_rope_goto_definition_cmd = 'e'
-let g:pymode_breakpoint = 0
-let g:pymode_folding = 0
-let g:pymode_motion = 0
-let g:pymode_run = 0
-let g:pymode_lint_cwindow = 0
-
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
 nmap <leader>w <Esc>:Gbrowse<CR>
+
+" YouCompleteMe
+map <C-]> <Esc>:YcmCompleter GoToDefinition<CR>
+let g:ycm_key_list_select_completion = ['<Tab>', '<C-Space>']
 
 " nerd tree
 map <leader>f :NERDTreeFind<CR>
