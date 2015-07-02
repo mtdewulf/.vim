@@ -14,6 +14,7 @@ let g:ctrlp_user_command = 'find %s -type f -not -path "*/.git/*" -not -path "*/
 " fugitive
 nmap <leader>b <Esc>:Gblame<CR>
 nmap <leader>w <Esc>:Gbrowse<CR>
+nmap <leader>g <Esc>:Gdiff<CR>
 
 " YouCompleteMe
 map <C-]> <Esc>:YcmCompleter GoToDefinition<CR>
