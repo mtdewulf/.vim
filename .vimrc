@@ -16,6 +16,9 @@ nmap <leader>b <Esc>:Gblame<CR>
 nmap <leader>w <Esc>:Gbrowse<CR>
 nmap <leader>g <Esc>:Gdiff<CR>
 
+" syntastic
+let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
+
 " YouCompleteMe
 map <C-]> <Esc>:YcmCompleter GoToDefinition<CR>
 let g:ycm_key_list_select_completion = ['<Tab>', '<C-Space>']
@@ -53,7 +56,7 @@ set foldlevel=99
 set nowrap
 set showbreak=>>>
 
-" easier to navigate vim men
+" easier to navigate vim menu
 set wildignore=log/**,node_modules/**,target/**,tmp/**,*.rbc
 set wildmenu
 set wildmode=longest,list,full
