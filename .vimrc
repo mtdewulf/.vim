@@ -17,6 +17,8 @@ nmap <leader>w <Esc>:Gbrowse<CR>
 nmap <leader>g <Esc>:Gdiff<CR>
 
 " syntastic
+let g:syntastic_html_checkers = ['tidy']
+let g:syntastic_html_tidy_exec = 'tidy5'
 let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute "]
 
 " YouCompleteMe
